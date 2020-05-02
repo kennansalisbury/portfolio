@@ -25,7 +25,7 @@ const Navbar = props => {
                         <a className="nav-link" href="#about">ABOUT</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href={resume} target="_blank">RESUME</a>
+                            <a className="nav-link" href={resume} target="_blank" rel='noreferrer noopener'>RESUME</a>
                         </li>
                     </ul>
                 </div>

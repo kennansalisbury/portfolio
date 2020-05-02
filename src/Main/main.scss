@@ -1,0 +1,77 @@
+@import '../scss/globals.scss';
+
+.main {
+    font-family: $body-font;
+    height: auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &-link {
+        text-decoration: none;
+        color: black;
+         &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}
+
+h1 {
+    color: black;
+    font-style: italic;
+    font-family: $header-font;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.links {
+    &-page {
+        font-size: 30px;
+        color: black;
+    }
+    &-main {
+        text-decoration: none;
+        color: black;
+         &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+    &-contact {
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            font-size: 60px;
+            // @include respond-to(small-screen) {
+            //     display: none;
+            // }
+        }
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    // @include respond-to(medium-screen) {
+    //     min-height: 85vh;
+    // }
+
+    .line {
+        height: .1em;
+        width: 30vw;
+        background: black;
+        margin: 10px auto;
+    }
+
+    h2 {
+        margin-bottom: 1em;
+    }
+} 
