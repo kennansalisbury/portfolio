@@ -2,7 +2,11 @@ import React from 'react'
 
 const Main = props => {
     return (
-        <div>Main Content</div>
+        <div>
+            {/* Intro */}
+            {/* Work */}
+            {/* About */}
+        </div>
     )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.scss'
+import resume from '../_Assets/Kennan_Salisbury_Resume_2020.pdf'
 
 const Navbar = props => {
     return (
@@ -24,7 +25,7 @@ const Navbar = props => {
                         <a className="nav-link" href="#about">ABOUT</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="./files/Kennan_Salisbury_Resume_2020.pdf" target="_blank">RESUME</a>
+                            <a className="nav-link" href={resume} target="_blank">RESUME</a>
                         </li>
                     </ul>
                 </div>
