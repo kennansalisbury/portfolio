@@ -1,12 +1,13 @@
 @import '../scss/globals.scss';
+@import '../scss/mix-ins.scss';
 
 .navbar {
-    // top: -50px;
-    // transition: top 0.3s;
-    // @include respond-to(small-screen) {
-    //     top: 0px;
-    //     transition: none;
-    // }
+    top: -50px;
+    transition: top 0.3s;
+    @include respond-to(small-screen) {
+        top: 0px;
+        transition: none;
+    }
     font-family: $header-font;
     &-brand {
         color: black;
@@ -39,7 +40,7 @@
 
 .top-icons {
     display: inline;
-    // @include respond-to(small-screen) {
-    //     display: none;
-    // }
+    @include respond-to(small-screen) {
+        display: none;
+    }
 }
