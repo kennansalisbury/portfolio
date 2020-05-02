@@ -1,0 +1,45 @@
+@import '../scss/globals.scss';
+
+.navbar {
+    // top: -50px;
+    // transition: top 0.3s;
+    // @include respond-to(small-screen) {
+    //     top: 0px;
+    //     transition: none;
+    // }
+    font-family: $header-font;
+    &-brand {
+        color: black;
+        &:hover {
+            color: gray;
+        }
+    }
+    a {
+        color: black;
+        font-family: $header-font;
+        & :hover {
+            color: gray ;
+        }
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    a {
+        &:hover {
+            color: gray;
+        }
+    }
+}
+
+.nav-item {
+    padding-right: 1em;
+}
+
+.top-icons {
+    display: inline;
+    // @include respond-to(small-screen) {
+    //     display: none;
+    // }
+}
