@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Carousel from './Carousel'
+import Images from './Images'
 
 const Project = props => {
 
@@ -20,7 +20,7 @@ const Project = props => {
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-sm-12 col-md-5 mt-5">
-                    <Carousel />
+                    <Images images={props.images} />
                 </div> 
             </div>
         </div>

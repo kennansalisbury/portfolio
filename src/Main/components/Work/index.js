@@ -2,8 +2,12 @@ import React from 'react'
 
 import Project from './Project/index'
 
+// import images
 import meetImg from '../../../_Assets/img/meet_out/user-home.png'
+import meetModal from '../../../_Assets/img/meet_out/modal.png'
+import meetDetails from '../../../_Assets/img/meet_out/details.png'
 import givingImg from '../../../_Assets/img/giving_tree/hero-img.png'
+
 import chefImg from '../../../_Assets/img/exp_chef/by-category.png'
 import scrammbleImg from '../../../_Assets/img/scrammble/scrammble.png'
 
@@ -19,7 +23,23 @@ const Work = props => {
             demoPw: 'password',
             github: 'https://github.com/kennansalisbury/meet-out',
             github2: null,
-            img: meetImg
+            images: [
+                {
+                    img: meetImg,
+                    caption: 'View calendar and scheduled meets',
+                    alt: 'meet-out-home screenshot'
+                },
+                {
+                    img: meetModal,
+                    caption: 'View more info on a meet',
+                    alt: 'meet-out-modal screenshot'
+                },
+                {
+                    img: meetDetails,
+                    caption: 'Full meet details',
+                    alt: 'meet-out-details screenshot'
+                },
+        ]
         },
         {
             title: 'The Giving Tree',
@@ -30,7 +50,11 @@ const Work = props => {
             demoPw: 'password',
             github: 'https://github.com/kennansalisbury/giving_client',
             github2: 'https://github.com/kennansalisbury/giving_server',
-            img: givingImg
+            images: [{
+                img: givingImg,
+                alt: 'giving tree image',
+                caption: 'Giving Tree home'
+            }]
         },
         {
             title: 'Express Chef',
@@ -41,7 +65,11 @@ const Work = props => {
             demoPw: 'password',
             github: 'https://github.com/kennansalisbury/express-chef',
             github2: null,
-            img: chefImg
+            images: [{
+                img: chefImg,
+                alt: 'express chef home',
+                caption: 'Home'
+            }]
         },
         {
             title: 'Scrammble',
@@ -52,7 +80,11 @@ const Work = props => {
             demoPw: null,
             github: 'https://github.com/kennansalisbury/scrabble_scramble',
             github2: null,
-            img: scrammbleImg
+            images: [{
+                img: scrammbleImg,
+                alt: 'scrammble image',
+                caption: 'Home'
+            }]
         },
     ]
 
@@ -67,6 +99,7 @@ const Work = props => {
                 demoPw={project.demoPw}
                 github={project.github}
                 github2={project.github2}
+                images={project.images}
             />
         )
     })
