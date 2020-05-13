@@ -3,8 +3,9 @@ import './navbar.scss'
 import resume from '../_Assets/Kennan_Salisbury_Resume_2020.pdf'
 
 const Navbar = props => {
+
     return (
-        <nav className="navbar">
+        <nav className='navbar fixed-top navbar-expand-sm d-flex justify-content-between'>
 
                 <div>
                     <a className="navbar-brand" href="#home">Kennan Salisbury</a>
