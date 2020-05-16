@@ -7,7 +7,8 @@ const Project = props => {
     return (
         <div className="card border-0 mb-5">
             <div className="row project">
-                <div className="col-sm-12 col-md-6">
+                <div className="col-md-1"></div>
+                <div className="col-sm-12 col-md-5">
                     <h2>{props.title}</h2>
                     <p>{props.tech}</p>
                     <hr/>
@@ -19,7 +20,7 @@ const Project = props => {
                     {props.github2 ? <><br/> <a href={props.github2} target="_blank" rel='noreferrer noopener'>Github Repo - Server</a></> : '' }
                 </div>
                 <div className="col-md-1"></div>
-                <div className="col-sm-12 col-md-5 mt-5">
+                <div className="col-sm-12 col-md-5">
                     <Images images={props.images} />
                 </div> 
             </div>

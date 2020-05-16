@@ -105,9 +105,9 @@ const Work = props => {
     })
     
     return (
-        <div className="projects">
+        <div className="work">
             <div className="row mb-5"><h1 className="col-sm-12 text-center">WORK</h1></div>
-            <div>
+            <div className="projects">
                 {projectList}
             </div>
 
