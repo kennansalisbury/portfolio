@@ -9,10 +9,14 @@ const Main = props => {
     const skills = [ 'Node.js', 'React', 'HTML', 'CSS', 'Python', 'Express', 'TypeScript', 'EJS', 'Sass', 'SQL/Sequelize', 'PostgreSQL', 'Git', 'MongoDB/Mongoose', 'Materialize/Material UI', 'Bootsrap/Reactstrap']
 
     return (
-        <div className="main">
+        <div className="main" id="home">
             <Intro />
-            <Work />
-            <About skills={skills} />
+            <div id="projects">
+                <Work />
+            </div>
+            <div id="about">
+                <About skills={skills} />
+            </div>
             <br/>
             <br/>
             <div className="d-flex justify-content-center"><a href="#home" className="links-page"><i className="fas fa-chevron-up"></i></a></div>
