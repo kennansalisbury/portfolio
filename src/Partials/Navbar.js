@@ -1,5 +1,5 @@
 import React from 'react'
-import './navbar.scss'
+import './partials.scss'
 import resume from '../_Assets/Kennan_Salisbury_Resume_2020.pdf'
 
 const Navbar = props => {

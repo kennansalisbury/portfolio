@@ -8,7 +8,7 @@ const Project = props => {
         <div className="card border-0 mb-5">
             <div className="row project">
                 <div className="col-md-1"></div>
-                <div className="col-sm-12 col-md-5">
+                <div className="col-sm-12 col-md-4">
                     <h2>{props.title}</h2>
                     <p>{props.tech}</p>
                     <hr/>
@@ -23,6 +23,7 @@ const Project = props => {
                 <div className="col-sm-12 col-md-5">
                     <Images images={props.images} />
                 </div> 
+                <div className="col-md-1"></div>
             </div>
         </div>
     )

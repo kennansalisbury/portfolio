@@ -10,7 +10,7 @@
     // position: fixed;
     top: 0px;
     transition: top 0.3s;
-    @include respond-to(small-screen) {
+    @include respond-to($small-screen) {
         top: 0px;
         transition: none;
     }
@@ -46,7 +46,32 @@
 
 .top-icons {
     display: inline;
-    @include respond-to(small-screen) {
+    @include respond-to($small-screen) {
         display: none;
+    }
+}
+
+
+footer {
+
+    font-size: 40px;
+    width: 100vw;
+    height: 10vh;
+    background: $background-color;
+    
+    a {
+        color: black;
+    }
+
+
+
+    .btm-icons {
+        display: none;
+        a {
+            color: black;
+        }
+        @include respond-to($small-screen) {
+            display: block;
+        }
     }
 }

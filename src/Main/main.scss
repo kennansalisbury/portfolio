@@ -62,7 +62,12 @@ h1 {
     min-height: 100vh;
 
     @include respond-to($medium-screen) {
+        min-height: 110vh;
+    }
+
+    @include respond-to($small-screen) {
         min-height: 85vh;
+        max-width: 100vw;
     }
 
     .line {
@@ -145,7 +150,7 @@ h1 {
     
     .project {
         background-color: $background-color;
-        @include respond-to(medium-screen) {
+        @include respond-to($medium-screen) {
             display: flex;
             flex-direction: column-reverse;
         }

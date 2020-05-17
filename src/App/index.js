@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import './App.scss';
 import Navbar from '../Partials/Navbar';
-import Main from '../Main/index'
+import Main from '../Main/index';
+import Footer from '../Partials/Footer';
+
 
 const App = props => {
 
@@ -25,6 +27,7 @@ const App = props => {
     <div>
       {nav}
       <Main />
+      <Footer />
     </div>
   );
 }
