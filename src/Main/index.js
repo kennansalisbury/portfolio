@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './main.scss'
 import Intro from './components/Intro'
 import Work from './components/Work/index'

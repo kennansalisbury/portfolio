@@ -3,8 +3,7 @@ import {
     Carousel,
     CarouselItem,
     CarouselControl,
-    CarouselIndicators,
-    CarouselCaption
+    CarouselIndicators
   } from 'reactstrap';
 
 const Images = props => {
@@ -47,6 +46,7 @@ const Images = props => {
             next={next}
             previous={previous}
             interval={false}
+            className="shadow-sm"
         >
             <CarouselIndicators items={props.images} activeIndex={activeIndex} onClickHandler={goToIndex} />
             {slides}

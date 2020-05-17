@@ -4,8 +4,8 @@ import me from '../../_Assets/img/me3.jpg'
 
 const About = props => {
 
-    let skillSection = props.skills.map(skill => {
-        return <li>{skill}</li>
+    let skillSection = props.skills.map((skill, i) => {
+        return <li key={i}>{skill}</li>
     })
 
     return (

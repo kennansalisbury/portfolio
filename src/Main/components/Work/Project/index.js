@@ -8,7 +8,7 @@ const Project = props => {
         <div className="card border-0 mb-5">
             <div className="row project">
                 <div className="col-md-1"></div>
-                <div className="col-sm-12 col-md-4">
+                <div className="project-info col-sm-12 col-md-4">
                     <h2>{props.title}</h2>
                     <p>{props.tech}</p>
                     <hr/>
@@ -20,7 +20,7 @@ const Project = props => {
                     {props.github2 ? <><br/> <a href={props.github2} target="_blank" rel='noreferrer noopener'>Github Repo - Server</a></> : '' }
                 </div>
                 <div className="col-md-1"></div>
-                <div className="col-sm-12 col-md-5">
+                <div className="images col-md-5">
                     <Images images={props.images} />
                 </div> 
                 <div className="col-md-1"></div>
