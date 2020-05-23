@@ -19,7 +19,10 @@ import saved from './img/exp_chef/saved-recipes.png'
 import dinner from './img/exp_chef/dinner.png'
 
 //scrammble
-import scrammbleImg from './img/scrammble/scrammble.png'
+import p1Start from './img/scrammble/P1_start.png'
+import p1Word from './img/scrammble/P1_word.png'
+import p2Word from './img/scrammble/P2_not_word.png'
+import final from './img/scrammble/Final_screen.png'
 
 
 const Projects = [
@@ -126,10 +129,26 @@ const Projects = [
         "github": "https://github.com/kennansalisbury/scrabble_scramble",
         "github2": null,
         "images": [{
-           "img": scrammbleImg,
-            "alt": "scrammble image",
-            "caption": "Home"
-        }]
+           "img": p1Start,
+            "alt": "Player 1 Starting Screen",
+            "caption": "P1 Start"
+        },
+        {
+            "img": p1Word,
+             "alt": "Player 1 Plays Word",
+             "caption": "P1 Word"
+         },
+         {
+            "img": p2Word,
+             "alt": "Player 2 Plays Word that doesn't exist in dictionary",
+             "caption": "P2 Not a word"
+         },
+         {
+            "img": final,
+             "alt": "Final points screen",
+             "caption": "Final points screen"
+         }
+    ]
     },
 ]
 
