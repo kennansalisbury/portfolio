@@ -1,4 +1,5 @@
 import React from 'react'
+import resume from "../../_Assets/Kennan_Salisbury_Resume_2020.pdf"
 
 const Intro = props => {
     return (
@@ -14,7 +15,7 @@ const Intro = props => {
             <div className="row text-center links-page">
                 <a className="col-sm-4 links-main" href="#projects">WORK</a>
                 <a className="col-sm-4 links-main" href="#about">ABOUT</a>
-                <a className="col-sm-4 links-main" href="./files/Kennan_Salisbury_Resume_2020.pdf" target="_blank">RESUME</a>
+                <a className="col-sm-4 links-main" href={resume} target="_blank" rel='noreferrer noopener'>RESUME</a>
             </div>
 
             
