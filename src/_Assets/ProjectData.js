@@ -31,6 +31,27 @@ import final from './img/scrammble/Final_screen.png'
 
 const Projects = [
     {
+        "title": "COVID-19 Volunteer Application",
+        "tech": "Node.js, Express, React, MongoDB/Mongoose",
+        "description": "Built back-end for application to help fulfill PPE needs at local organizations via a volunteer network.",
+        "demoLink": null,
+        "demoUn": null,
+        "demoPw": null,
+        "github": "https://github.com/kennansalisbury/ppe-server",
+        "github2": null,
+        "images": [{
+           "img": orders,
+            "alt": "Order status",
+            "caption": "Order status"
+        },
+        {
+            "img": inventory,
+             "alt": "Volunteer inventory tracking",
+             "caption": "Volunteer inventory tracking"
+         }
+    ]
+    },
+    {
         "title": "Meet Out",
         "tech": "TypeScript, React, Node.js, Express, JavaScript, MongoDB/Mongoose, HTML/CSS, Reactstrap",
         "description": "Build community with like-minded outdoor activity and fitness enthusiasts.",
@@ -86,27 +107,6 @@ const Projects = [
              "alt": "giving tree screenshot of user dashboard",
              "caption": "View overall impact of your donations over time"
          }]
-    },
-    {
-        "title": "COVID-19 Volunteer Site",
-        "tech": "Node.js, Express, React, MongoDB/Mongoose",
-        "description": "Built back-end for application to help fulfill PPE needs at local organizations via a volunteer network.",
-        "demoLink": null,
-        "demoUn": null,
-        "demoPw": null,
-        "github": "https://github.com/kennansalisbury/ppe-server",
-        "github2": null,
-        "images": [{
-           "img": orders,
-            "alt": "Order status",
-            "caption": "Order status"
-        },
-        {
-            "img": inventory,
-             "alt": "Volunteer inventory tracking",
-             "caption": "Volunteer inventory tracking"
-         }
-    ]
     },
     {
         "title": "Express Chef",
