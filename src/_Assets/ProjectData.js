@@ -10,6 +10,10 @@ import drive from './img/giving_tree/drive.png'
 import cart from './img/giving_tree/cart.png'
 import dashboard from './img/giving_tree/dashboard.png'
 
+//sewstrong
+import inventory from './img/sewstrong/inventory.png'
+import orders from './img/sewstrong/orders.png'
+
 //express chef
 import chefImg from './img/exp_chef/by-category.png'
 import search from './img/exp_chef/search.png'
@@ -84,6 +88,27 @@ const Projects = [
          }]
     },
     {
+        "title": "COVID-19 Volunteer Site",
+        "tech": "Node.js, Express, React, MongoDB/Mongoose",
+        "description": "Built back-end for application to help fulfill PPE needs at local organizations via a volunteer network.",
+        "demoLink": null,
+        "demoUn": null,
+        "demoPw": null,
+        "github": "https://github.com/kennansalisbury/ppe-server",
+        "github2": null,
+        "images": [{
+           "img": orders,
+            "alt": "Order status",
+            "caption": "Order status"
+        },
+        {
+            "img": inventory,
+             "alt": "Volunteer inventory tracking",
+             "caption": "Volunteer inventory tracking"
+         }
+    ]
+    },
+    {
         "title": "Express Chef",
         "tech": "Node.js, Express, EJS, PostgreSQL, SQL/Sequelize, HTML/CSS, Bootstrap",
         "description": "Search, save, create and categorize recipes in your own digital cookbook.",
@@ -149,7 +174,7 @@ const Projects = [
              "caption": "Final points screen"
          }
     ]
-    },
+    }
 ]
 
 export default Projects
