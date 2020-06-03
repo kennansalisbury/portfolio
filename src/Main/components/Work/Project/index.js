@@ -13,7 +13,7 @@ const Project = props => {
                     <p>{props.tech}</p>
                     <hr/>
                     <p>{props.description}</p>
-                    <a href={props.demoLink} target="_blank" rel='noreferrer noopener'>Live Demo </a>
+                    {props.demoLink ? <a href={props.demoLink} target="_blank" rel='noreferrer noopener'>Live Demo </a> : ''}
                     <br/>
                     <p className="demo-info">{props.demoUn ? <small>Test User un: {props.demoUn} pw: {props.demoPw}</small> : ''}</p>
                     <a href={props.github} target="_blank" rel='noreferrer noopener'>Github Repo {props.github2 ? '- Client' : ''}</a>
