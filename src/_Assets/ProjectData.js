@@ -52,33 +52,6 @@ const Projects = [
     ]
     },
     {
-        "title": "Meet Out",
-        "tech": "TypeScript, React, Node.js, Express, JavaScript, MongoDB/Mongoose, HTML/CSS, Reactstrap",
-        "description": "Build community with like-minded outdoor activity and fitness enthusiasts.",
-        "demoLink": "https://meeting-out.herokuapp.com/",
-        "demoUn": "beargrylls@gmail.com",
-        "demoPw": "password",
-        "github": "https://github.com/kennansalisbury/meet-out",
-        "github2": null,
-        "images": [
-            {
-               "img": meetImg,
-                "caption": "View calendar and scheduled meets",
-                "alt": "meet-out-home screenshot"
-            },
-            {
-               "img": meetModal,
-                "caption": "View more info on a meet",
-                "alt": "meet-out-modal screenshot"
-            },
-            {
-               "img": meetDetails,
-                "caption": "Full meet details",
-                "alt": "meet-out-details screenshot"
-            },
-    ]
-    },
-    {
         "title": "The Giving Tree",
         "tech": "React, Node.js, Express, JavaScript, PostgreSQL, SQL/Sequelize, HTML/CSS, Material UI",
         "description": "View an organization's donation needs, purchase to donate, and see the impact your contributions are making.",
@@ -107,6 +80,33 @@ const Projects = [
              "alt": "giving tree screenshot of user dashboard",
              "caption": "View overall impact of your donations over time"
          }]
+    },
+    {
+        "title": "Meet Out",
+        "tech": "TypeScript, React, Node.js, Express, JavaScript, MongoDB/Mongoose, HTML/CSS, Reactstrap",
+        "description": "Build community with like-minded outdoor activity and fitness enthusiasts.",
+        "demoLink": "https://meeting-out.herokuapp.com/",
+        "demoUn": "beargrylls@gmail.com",
+        "demoPw": "password",
+        "github": "https://github.com/kennansalisbury/meet-out",
+        "github2": null,
+        "images": [
+            {
+               "img": meetImg,
+                "caption": "View calendar and scheduled meets",
+                "alt": "meet-out-home screenshot"
+            },
+            {
+               "img": meetModal,
+                "caption": "View more info on a meet",
+                "alt": "meet-out-modal screenshot"
+            },
+            {
+               "img": meetDetails,
+                "caption": "Full meet details",
+                "alt": "meet-out-details screenshot"
+            },
+    ]
     },
     {
         "title": "Express Chef",
