@@ -32,7 +32,7 @@ import final from './img/scrammble/Final_screen.png'
 const Projects = [
     {
         "title": "COVID-19 Volunteer Application",
-        "tech": "Node.js, Express, React, MongoDB/Mongoose",
+        "tech": "Node.js, Express, React, MongoDB/Mongoose, Sass",
         "description": "Built back-end for application to help fulfill PPE needs at local organizations via a volunteer network.",
         "demoLink": null,
         "demoUn": null,
