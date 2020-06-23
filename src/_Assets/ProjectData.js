@@ -20,7 +20,7 @@ import search from './img/exp_chef/search.png'
 import results from './img/exp_chef/search-results.png'
 import recipe from './img/exp_chef/recipe.png'
 import saved from './img/exp_chef/saved-recipes.png'
-import dinner from './img/exp_chef/dinner.png'
+// import dinner from './img/exp_chef/dinner.png'
 
 //scrammble
 import p1Start from './img/scrammble/P1_start.png'
