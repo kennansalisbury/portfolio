@@ -6,7 +6,7 @@ import About from './components/About'
 
 const Main = props => {
 
-    const skills = [ 'Node.js', 'React', 'HTML', 'CSS', 'Python', 'Express', 'TypeScript', 'EJS', 'Sass', 'SQL/Sequelize', 'PostgreSQL', 'Git', 'MongoDB/Mongoose', 'Materialize/Material UI', 'Bootsrap/Reactstrap']
+    const skills = [ 'Node.js', 'React', 'HTML', 'CSS', 'Python', 'Express', 'GraphQL', 'TypeScript', 'EJS', 'Sass', 'SQL/Sequelize', 'PostgreSQL', 'Git', 'MongoDB/Mongoose', 'Materialize/Material UI', 'Bootsrap/Reactstrap']
 
     return (
         <div className="main" id="home">
