@@ -75,12 +75,17 @@ const Main = (props) => {
         style={{
           width: "400px",
           height: "600px",
-          position: "absolute",
+          position: "fixed",
           bottom: "10px",
           right: "10px",
-          zIndex: 1000,
+          zIndex: 10000,
+          borderWidth: "0px",
+          borderStyle: "unset",
+          borderColor: "unset",
+          borderImage: "unset",
         }}
         id="pryon-chatbot-iframe"
+        title="Test Chatbot"
       />
       <Intro />
       <div id="projects">
