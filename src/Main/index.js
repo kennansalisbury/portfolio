@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./main.scss";
 import Intro from "./components/Intro";
 import Work from "./components/Work/index";
@@ -72,7 +72,15 @@ const Main = (props) => {
     <div className="main" id="home">
       <iframe
         src="https://admin-mainline.pryon.dev/apps/3895a913-2c5c-45b5-9c4a-9bb8064c70b0"
-        style={{ width: "400px", height: "600px" }}
+        style={{
+          width: "400px",
+          height: "600px",
+          position: "absolute",
+          bottom: "10px",
+          right: "10px",
+          zIndex: 1000,
+        }}
+        id="pryon-chatbot-iframe"
       />
       <Intro />
       <div id="projects">
