@@ -7,7 +7,7 @@ const Intro = props => {
 
             <div className="row text-center"><h1>Kennan Salisbury</h1></div >
 
-            <div className="row text-center"><h4>Software Engineer</h4></div>
+            <div className="row text-center"><h4>Software Engineer Test</h4></div>
 
             <div className="row"><div className="line col-sm-12"></div></div>
             
