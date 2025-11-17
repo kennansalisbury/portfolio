@@ -1,29 +1,97 @@
-import React from 'react'
-import './main.scss'
-import Intro from './components/Intro'
-import Work from './components/Work/index'
-import About from './components/About'
+import React from "react";
+import "./main.scss";
+import Intro from "./components/Intro";
+import Work from "./components/Work/index";
+import About from "./components/About";
 
-const Main = props => {
+const Main = (props) => {
+  const iFrameEventListener = (event) => {
+    const CHATBOT_OPEN_HEIGHT = "600px";
+    const CHATBOT_OPEN_WIDTH = "400px";
+    const CHATBOT_OPEN_EXPANDED_HEIGHT = "90vh";
+    const CHATBOT_OPEN_EXPANDED_WIDTH = "90vw";
+    const CHATBOT_CLOSED_WITH_GREETING_HEIGHT = "140px";
+    const CHATBOT_CLOSED_WITH_GREETING_WIDTH = "260px";
+    const CHATBOT_CLOSED_NO_GREETING_HEIGHT = "48px";
+    const CHATBOT_CLOSED_NO_GREETING_WIDTH = "48px";
 
-    const skills = [ 'Node.js', 'React', 'HTML', 'CSS', 'Python', 'Express', 'GraphQL', 'TypeScript', 'EJS', 'Sass', 'SQL/Sequelize', 'PostgreSQL', 'Git', 'MongoDB/Mongoose', 'Materialize/Material UI', 'Bootsrap/Reactstrap']
+    if (event.data.type === "resize") {
+      const iframe = document.getElementById("pryon-chatbot-iframe");
+      let iframeHeight = "0";
+      let iframeWidth = "0";
+      if (event.data.open) {
+        iframeHeight = CHATBOT_OPEN_HEIGHT;
+        iframeWidth = CHATBOT_OPEN_WIDTH;
 
-    return (
-        <div className="main" id="home">
-            <Intro />
-            <div id="projects">
-                <Work />
-            </div>
-            <div id="about">
-                <About skills={skills} />
-            </div>
-            <br/>
-            <br/>
-            <div className="d-flex justify-content-center"><a href="#home" className="links-page"><i className="fas fa-chevron-up"></i></a></div>
-            <br/>
-            <br/>
-        </div>
-    )
-}
+        if (event.data.expanded) {
+          iframeHeight = CHATBOT_OPEN_EXPANDED_HEIGHT;
+          iframeWidth = CHATBOT_OPEN_EXPANDED_WIDTH;
+        }
+      } else {
+        iframeHeight = CHATBOT_CLOSED_NO_GREETING_HEIGHT;
+        iframeWidth = CHATBOT_CLOSED_NO_GREETING_WIDTH;
 
-export default Main
+        if (event.data.greetingOpen) {
+          iframeHeight = CHATBOT_CLOSED_WITH_GREETING_HEIGHT;
+          iframeWidth = CHATBOT_CLOSED_WITH_GREETING_WIDTH;
+        }
+      }
+
+      iframe.style.height = iframeHeight;
+      iframe.style.width = iframeWidth;
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("message", iFrameEventListener);
+    return () => {
+      window.removeEventListener("message", iFrameEventListener);
+    };
+  }, []);
+
+  const skills = [
+    "Node.js",
+    "React",
+    "HTML",
+    "CSS",
+    "Python",
+    "Express",
+    "GraphQL",
+    "TypeScript",
+    "EJS",
+    "Sass",
+    "SQL/Sequelize",
+    "PostgreSQL",
+    "Git",
+    "MongoDB/Mongoose",
+    "Materialize/Material UI",
+    "Bootsrap/Reactstrap",
+  ];
+
+  return (
+    <div className="main" id="home">
+      <iframe
+        src="https://admin-mainline.pryon.dev/apps/3895a913-2c5c-45b5-9c4a-9bb8064c70b0"
+        style={{ width: "400px", height: "600px" }}
+      />
+      <Intro />
+      <div id="projects">
+        <Work />
+      </div>
+      <div id="about">
+        <About skills={skills} />
+      </div>
+      <br />
+      <br />
+      <div className="d-flex justify-content-center">
+        <a href="#home" className="links-page">
+          <i className="fas fa-chevron-up"></i>
+        </a>
+      </div>
+      <br />
+      <br />
+    </div>
+  );
+};
+
+export default Main;
