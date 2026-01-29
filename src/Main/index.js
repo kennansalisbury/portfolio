@@ -71,7 +71,7 @@ const Main = (props) => {
   return (
     <div className="main" id="home">
       <iframe
-        src="https://admin-mainline.pryon.dev/apps/3895a913-2c5c-45b5-9c4a-9bb8064c70b0"
+        src="https://localhost:8080"
         style={{
           width: "400px",
           height: "600px",
