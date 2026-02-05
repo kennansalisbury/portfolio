@@ -42,12 +42,12 @@ const Main = (props) => {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener("message", iFrameEventListener);
-    return () => {
-      window.removeEventListener("message", iFrameEventListener);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("message", iFrameEventListener);
+  //   return () => {
+  //     window.removeEventListener("message", iFrameEventListener);
+  //   };
+  // }, []);
 
   const skills = [
     "Node.js",
