@@ -70,23 +70,23 @@ const Main = (props) => {
 
   return (
     <div className="main" id="home">
-      <iframe
-        src="https://admin-prod.pryon.net/apps/b9103afc-55e0-48f4-af8b-f10fa3ccea0c"
-        style={{
-          width: "400px",
-          height: "600px",
-          position: "fixed",
-          bottom: "10px",
-          right: "10px",
-          zIndex: 10000,
-          borderWidth: "0px",
-          borderStyle: "unset",
-          borderColor: "unset",
-          borderImage: "unset",
-        }}
-        id="pryon-chatbot-iframe"
-        title="Test Chatbot"
-      />
+      // <iframe
+      //   src="https://admin-prod.pryon.net/apps/b9103afc-55e0-48f4-af8b-f10fa3ccea0c"
+      //   style={{
+      //     width: "400px",
+      //     height: "600px",
+      //     position: "fixed",
+      //     bottom: "10px",
+      //     right: "10px",
+      //     zIndex: 10000,
+      //     borderWidth: "0px",
+      //     borderStyle: "unset",
+      //     borderColor: "unset",
+      //     borderImage: "unset",
+      //   }}
+      //   id="pryon-chatbot-iframe"
+      //   title="Test Chatbot"
+      // />
       <Intro />
       <div id="projects">
         <Work />
